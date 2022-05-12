@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<script>
+		function reloj() {
+			//Variables
+			horareal = new Date()
+			hora = horareal.getHours()
+			minuto = horareal.getMinutes()
+			segundo = horareal.getSeconds()
+			//Codigo para evitar que solo se vea un numero en los segundos
+			comprobarsegundo = new String (segundo)
+			if (comprobarsegundo.length == 1)
+			segundo = "0" + segundo
+			//Codigo para evitar que solo se vea un numero en los minutos
+			comprobarminuto = new String (minuto)
+			if (comprobarminuto.length == 1)
+			minuto = "0" + minuto
+			//Codigo para evitar que solo se vea un numero en las horas
+			comprobarhora = new String (hora)
+			if (comprobarhora.length == 1)
+			hora = "0" + hora
+			// Codigo para mostrar el reloj en pantalla
+			verhora = hora + " : " + minuto + " : " + segundo
+			document.reloj_javascript.reloj.value = verhora
+			setTimeout("reloj()",1000)
+		}
+	</script>
+<script src="modernizr-custom.js"></script>
+<script src="carrousel3d.js"></script>
+</head>
+<body onload="reloj()">
+	<form name="reloj_javascript">
+		<input type="text" name="reloj" onfocus="window.document.reloj_javascript.reloj.blur()">
+	</form>
+</body>
+
+    	
+    <img class="clase1"src="img/log.jpg">
+    <title>Tecnología y sus enfermedades</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <script src="reloj.js"></script>
+    <script src="carrousel vertical/carrousel.js"></script>
+    <script src="carrousel vertical/funciones.js"></script>
+    
+<script>
+var f=new Date();
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+document.write('<div class="mifecha">');
+document.write('<div class="ano">' + f.getFullYear() + '</div>');
+document.write('<div class="dia">' + f.getDate() + '</div>');
+document.write('<div class="mes">' + meses[f.getMonth()] + '</div>');
+document.write('</div>');
+</script>
+
+
+</head>	
+<body>
+<div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com/Tecnologia-Y-Sus-Enfermedades-2161676747384249" target="_blank" class="icon-facebook"></a>
+			<li><a href="https://www.instagram.com/tecenfermedades/" target="_blank" class="icon-instagram"></a></li>
+			<li><a href="http://tecnologiaysusenfermedades@gmail.com" class="icon-mail"></a></li>
+		</ul>
+	</div>
+        <ul class="menu cf">
+  <li><a href="index.html">INICIO</a></li>
+
+
+
+ <li>
+    <a href=""> LA TECNOLOGIA</a>
+    <ul class="submenu">
+      <li><a href="TECNOLOGIA.HTML">¿Qu&eacute; es?</a></li>
+      <li><a href="VENTAJAS.HTML"> Ventajas</a></li>
+      <li><a href="DESVENTAJAS.HTML"> Desventajas </a></li>
+    </ul>			
+  </li>
+
+  <li>
+    <a href="">SISTEMA NERVIOSO</a>
+    <ul class="submenu">
+      <li><a href="TUNEL.HTML"> T&uacute;nel carpiano</a></li>
+      <li><a href="TENDINITIS.HTML"> Tendinitis</a></li>
+      <li><a href="TORTICOLIS.HTML"> Torticolis</a></li>
+   
+  </ul>			
+  </li>
+
+
+
+
+ <li>
+    <a href="">PROBLEMAS</a>
+    <ul class="submenu">
+      <li><a href="MENTALES.HTML"> Mentales</a></li>
+      <li><a href="auditiva.html"> Auditivos</a></li>
+      <li><a href="visuales.html"> Visuales</a></li>
+    </ul>			
+  </li>
+
+
+  <li><a href="">GALERIA</a>
+    <ul class="submenu">
+      <li><a href="GALERIA.HTML">FOTOS</a></li>
+      <li><a href="video.html">VIDEOS</a></li>
+    </ul>			
+  </li>
+  <li><a href="">DESARROLLADORES</a>
+      <ul class="submenu">
+      <li><a href="clara.html">Clara Pereira</a></li>
+      <li><a href="nestor.html">Nestor Salinas</a></li>
+      <li><a href="librada.html">Librada Vera</a></li>
+    </ul>
+   </li>
+  </UL>
+<div class="titulolateralizq">
+<h2 class="estilo1"><marquee direction="left">JUEGUE TRIVIA</marquee></h2>
+</div>
+<a href="trivial.html" alt=""><img class="clase2"src="img/GAME.gif">
+<div class="titulolateral">
+<h2><marquee direction="right">RECOMENDADOS</marquee></h2>
+</div>
+<div class="carrusel">
+<ul class="bloque-imagenes">
+<li><a href="TUNEL.HTML" alt=""><img src="img/tunelcarpiano.jpg" alt=""/></a>
+</li>
+<li><a href="MENTALES.HTML" alt=""><img src="img/problemasmentales.jpg" alt=""/></a>
+</li>
+<li><a href="TORTICOLIS.HTML" alt=""><img src="img/torticolis.jpg" alt=""/></a>
+</li>
+<li><a href="TENDINITIS.HTML" alt=""><img src="img/tendinitis.jpg" alt=""/></a>
+</li>
+                     
+</ul>
+</div>
+<div class="content-box-blue">
+<div id="videobox">
+<iframe name="videog" width="525px" height="475px" img src="video/intro1.gif" frameborder="0" ></iframe>
+<div style="float:right;overflow:auto;width:130px;height:445px;"> 
+
+<div class="mini"> <a href="video/Enfermedades.mp4" target="videog"><img src="IMG/7enfer.jpg"   src="video/Enfermedades.mp4" width="90px" /><td style="text-align:center;"> Enfermedades
+</td></a></div>
+
+<div class="mini"><a href="video/Tendinitis.mp4" target="videog"><img src="IMG/tendinitis.jpg" src="video/Tendinitis.mp4"   width="90px"/><td style="text-align:center;">Tendinitis
+
+</td></a></div>
+
+ <div class="mini"><a href="video/torticolis.mp4" target="videog"><img src="IMG/torticolis.jpg"  src="URL imágen video 4" width="90px" /><td style="text-align:center;">Torticolis
+
+</td></a></div>
+
+<div class="mini"><a href="video/obsesión.mp4" target="videog"><img src="IMG/obsesion.jpg"  src="URL imágen video 5" width="90px" /><td style="text-align:center;">Obsesión
+
+</td></a></div>
+<div class="mini"><a href="video/tunel.mp4" target="videog"><img src="IMG/tunelcarpiano.jpg"  src="URL imágen video 5" width="90px" /><td style="text-align:center;">Túnel Carpiano
+
+</td></a></div>
+<div class="mini"><a href="video/adicción.mp4" target="videog"><img src="IMG/adiccion.jpg"  src="URL imágen video 5" width="90px" /><td style="text-align:center;">Adiccion 1
+
+</td></a></div>
+<div class="mini"><a href="video/adicción1.mp4" target="videog"><img src="IMG/adiccion.jpg"  src="URL imágen video 5" width="90px" /><td style="text-align:center;">Adicción 2
+
+</td></a></div>
+<div class="mini"><a href="video/visual.mp4" target="videog"><img src="IMG/visual.jpg"  src="URL imágen video 5" width="90px" /><td style="text-align:center;">Visual
+</a></div>
+
+
+</div>
+</div> 
+</div>
+
+
+
+
+
+
+<div id="piedepagina">
+Copyright &copy; 2018 - Todos los derechos reservados
+</div>		
+</body>
+</html>

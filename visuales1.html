@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<script>
+		function reloj() {
+			//Variables
+			horareal = new Date()
+			hora = horareal.getHours()
+			minuto = horareal.getMinutes()
+			segundo = horareal.getSeconds()
+			//Codigo para evitar que solo se vea un numero en los segundos
+			comprobarsegundo = new String (segundo)
+			if (comprobarsegundo.length == 1)
+			segundo = "0" + segundo
+			//Codigo para evitar que solo se vea un numero en los minutos
+			comprobarminuto = new String (minuto)
+			if (comprobarminuto.length == 1)
+			minuto = "0" + minuto
+			//Codigo para evitar que solo se vea un numero en las horas
+			comprobarhora = new String (hora)
+			if (comprobarhora.length == 1)
+			hora = "0" + hora
+			// Codigo para mostrar el reloj en pantalla
+			verhora = hora + " : " + minuto + " : " + segundo
+			document.reloj_javascript.reloj.value = verhora
+			setTimeout("reloj()",1000)
+		}
+	</script>
+<script src="modernizr-custom.js"></script>
+<script src="carrousel3d.js"></script>
+</head>
+<body onload="reloj()">
+	<form name="reloj_javascript">
+		<input type="text" name="reloj" onfocus="window.document.reloj_javascript.reloj.blur()">
+	</form>
+</body>
+
+    	
+    <img class="clase1"src="img/log.jpg">
+    <title>Tecnologia y sus enfermedades</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <script src="reloj.js"></script>
+    <script src="carrousel vertical/carrousel.js"></script>
+    <script src="carrousel vertical/funciones.js"></script>
+    
+<script>
+var f=new Date();
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+document.write('<div class="mifecha">');
+document.write('<div class="ano">' + f.getFullYear() + '</div>');
+document.write('<div class="dia">' + f.getDate() + '</div>');
+document.write('<div class="mes">' + meses[f.getMonth()] + '</div>');
+document.write('</div>');
+</script>
+
+
+</head>	
+<body>
+<div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com/Tecnologia-Y-Sus-Enfermedades-2161676747384249" target="_blank" class="icon-facebook"></a>
+			<li><a href="https://www.instagram.com/tecenfermedades/" target="_blank" class="icon-instagram"></a></li>
+			<li><a href="http://tecnologiaysusenfermedades@gmail.com" class="icon-mail"></a></li>
+		</ul>
+	</div>
+        <ul class="menu cf">
+  <li><a href="index.html">INICIO</a></li>
+
+
+
+ <li>
+    <a href=""> LA TECNOLOGIA</a>
+    <ul class="submenu">
+      <li><a href="TECNOLOGIA.HTML">¿Qu&eacute; es?</a></li>
+      <li><a href="VENTAJAS.HTML"> Ventajas</a></li>
+      <li><a href="DESVENTAJAS.HTML"> Desventajas </a></li>
+    </ul>			
+  </li>
+
+  <li>
+    <a href="">SISTEMA NERVIOSO</a>
+    <ul class="submenu">
+      <li><a href="TUNEL.HTML"> T&uacute;nel carpiano</a></li>
+      <li><a href="TENDINITIS.HTML"> Tendinitis</a></li>
+      <li><a href="TORTICOLIS.HTML"> Torticolis</a></li>
+   
+  </ul>			
+  </li>
+
+
+
+
+ <li>
+    <a href="">PROBLEMAS</a>
+    <ul class="submenu">
+      <li><a href="MENTALES.HTML"> Mentales</a></li>
+      <li><a href="auditiva.html"> Auditivos</a></li>
+      <li><a href="visuales.html"> Visuales</a></li>
+    </ul>			
+  </li>
+
+
+  <li><a href="">GALERIA</a>
+    <ul class="submenu">
+      <li><a href="GALERIA.HTML">FOTOS</a></li>
+      <li><a href="video.html">VIDEOS</a></li>
+    </ul>			
+  </li>
+  <li><a href="">DESARROLLADORES</a>
+      <ul class="submenu">
+      <li><a href="clara.html">Clara Pereira</a></li>
+      <li><a href="nestor.html">Nestor Salinas</a></li>
+      <li><a href="librada.html">Librada Vera</a></li>
+    </ul>
+   </li>
+  </UL>
+<div class="titulolateralizq">
+<h2 class="estilo1"><marquee direction="left">JUEGUE TRIVIA</marquee></h2>
+</div>
+<a href="trivial.html" alt=""><img class="clase2"src="img/GAME.gif">
+<div class="titulolateral">
+<h2><marquee direction="right">RECOMENDADOS</marquee></h2>
+</div>
+<div class="carrusel">
+<ul class="bloque-imagenes">
+<li><a href="TUNEL.HTML" alt=""><img src="img/tunelcarpiano.jpg" alt=""/></a>
+</li>
+<li><a href="MENTALES.HTML" alt=""><img src="img/problemasmentales.jpg" alt=""/></a>
+</li>
+<li><a href="TORTICOLIS.HTML" alt=""><img src="img/torticolis.jpg" alt=""/></a>
+</li>
+<li><a href="TENDINITIS.HTML" alt=""><img src="img/tendinitis.jpg" alt=""/></a>
+</li>
+                     
+</ul>
+</div>
+<div class="content-box-blue">
+<h1>Resequedad</h1> 
+<p>Se presenta especialmente de las personas que hacen uso del computador por más.</p>  
+<p>De 8 horas diarias, pues la frecuencia de parpadeo se produce 80? al estar frente a una pantalla. Esto no significa que el ojo deje de hidratarse sino que esta no se produce de forma correcta en toda la superficie del ojo.</p> 
+
+<center><img src="IMG/ocular2(1).jpg" width="340px" height="180"></center>
+
+<h1>Síntomas</h1> 
+<p>•	Enrojecimiento.
+<p>•	Visión borrosa.
+<p>•	Sensación de cansancio.
+<h1>Tratamiento</h1> 
+<p>•	Tratamiento etim0lógico, es decir el tratamiento a la casa o origen de enfermedad.
+<p>•	Sustitutos de lágrimas (gotas).
+<p>•	Moderar el uso de calefacción y aire acondicionado. 
+<p>•	Evitar lugares cargados de humo.
+<p>•	Reducir el uso de aparatos con pantallas que pueda agravar el cuadro clínico. 
+<h1>Prevención</h1> 
+<p>•	Se aconseja   parpadear con frecuencia. 
+<p>•	Hacer tiempo frente al computador.
+<p>•	Usar lágrimas artificiales. 
+<p>•	Asegurarse de llevar gafas de alta calidad para proteger sus ojos.
+ 
+<h1>Tensión ocular</h1> 
+<p>La tensión ocular se suele dar cuando existe desequilibrio en la presión de los fluidos y el ojo tiene un desequilibrio en la presión de los fluidos y el ojo tiene capacidad suficiente para drenar los humos oscuros. Esto puede ocasionar que el líquido se acumule en el interior así subir los niveles de presión. Pero también puede darse el caso de que está anomalía sea fruto de producir un exceso de líquido por lo que aún con unos niveles normales se dificultaría el proceso y también se necesita actuar sobre ello.<p>
+
+<center><img src="IMG/ten.jpg" width="340px" height="180"></center>
+
+<h1>Síntomas</h1>
+<p>•	Dolor de cabeza 
+<p>•	Mareos 
+<p>•	Dolor ocular 
+<p>•	Visión borrosa pérdida progresiva de la visión.  
+<h1>Tratamiento</h1> 
+<p>•	Tratar con gotas tópicas o realizar una cirugía para drenar el líquido acumulado.
+<p>•	mejorar el sistema de drenaje.
+<p>•	Acudir al oftalmólogo.
+<h1>Prevención</h1> 
+<p>•	Participar de deportes al menos 3 veces a la semana.
+<p>•	Dieta balanceada y variada.
+<p>•	Regula las emociones.
+<p>•	Descansar los ojos. 
+<p>•	Evitar el brillo excesivo sobre la superficie en la que está fijando la vista.</p> 
+<a href="visuales.html"><img class="start1" src="img/izq.png"></a>
+</div>
+
+
+<div id="piedepagina">
+Copyright &copy; 2018 - Todos los derechos reservados
+</div>		
+</body>
+</html>
+
+

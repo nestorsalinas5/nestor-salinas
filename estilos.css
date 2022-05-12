@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(img/6.jpg);
+}
+header{
+    width: 71%;
+    height: 50px;
+    background: blue;
+    margin:auto;
+   position:relative;
+   z-index:50;
+
+
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index:50;
+ position: relative;
+}
+
+/* Main level */
+.menu {			
+  margin-left:15%;
+  margin-top:47px;
+  width:fit-content;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+ 
+}
+.menu > li {
+  background: #3390FF;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family:Cooper Black, Helvetica, Time new roman;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: #99a3a4;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #3390FF;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+.slides {
+    width:100%;
+    margin:20px auto;
+    z-index:0;
+    margin-top:-2%;
+
+}
+
+.slides img {
+    width:100%;
+    margin:20px auto;
+    z-index:0;
+position:relative;
+
+}
+
+.slidesjs-pagination {
+    background:#424242;
+    list-style:none;
+    overflow:hidden;
+}
+
+.slidesjs-pagination li {
+    float:left;
+}
+
+.slidesjs-pagination li a {
+    display:block;
+    padding:10px 20px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.slidesjs-pagination li a:hover {
+    background:#000;
+}
+
+.slides .active {
+    background:#000;
+}
+
+.slidesjs-navigation{
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:13.5px 20px;
+    float:right;
+}
+.menu a:visited{
+    color: black;
+    text-decoration: none;
+    z-index:50;
+  
+      
+}
+
+.clase1{
+    margin-left:15%;
+    width: 72%;
+    margin-top:-28px;
+}
+.clase2{
+	height:120px;
+	width:170px;
+	margin-top:1%;
+	border:1px #fff solid;
+	margin-left:1%;
+}
+
+.main {
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-instagram {background: #8B4513;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+
+
+	.content-box-blue {
+	background-color: rgba( 0, 0, 0, 0.5);
+	margin-left:15%;
+	margin-right:250px;
+	margin-top:-29%;
+	margin-bottom:30px;
+	overflow: hidden;
+	padding: 20px;
+	text-align:justify;
+	padding:30px;
+	
+	}
+
+	h1{
+	font-size:50px;
+	font-family: marked fool;
+        color:  #3390FF;
+	text-align:center;
+	text-shadow: 0 0 30px #3390FF;
+   	}
+        h2{
+	font-size:17px;
+	font-family: marked fool;
+        color:  #3390FF;
+	text-align:center;
+	text-shadow: 0 0 30px #3390FF;
+   	}
+ 	h2.estilo1{
+	font-size:18px;
+	font-family: marked fool;
+        color:  #3390FF;
+	text-align:center;
+	text-shadow: 0 0 30px #3390FF;
+   	}
+	p{
+	margin:22px;
+	font-family: arial black, Time new roman,vani,arial black, tahoma;
+	color: white;
+	padding:5px;
+	}
+	marquee{
+	text-align:center;
+	margin-top:-50%;
+	}
+input {
+	border: none;
+	background-color:#333333;
+	color: #3390FF;
+	padding: 5px;
+	text-align: center;
+	margin-left:-10px;
+	font-family:Cooper Black, Helvetica;
+	font-size:18px;
+}
+
+
+
+
+.mifecha {
+   background-color: #999;
+   padding: 4px;
+   width: 112px;
+   text-align: center;
+   font-family:verdana, arial;
+   font-size: 14pt;
+   margin-left:89%;
+   margin-top:-13%;
+}
+.mifecha .ano{
+   background-color: #339;
+   padding: 2px;
+   font-size: 100%;
+   margin-bottom: 3px;
+   color: #fff;
+   letter-spacing: 3px;
+   font-weight: bold;
+}
+.mifecha .dia{
+   background-color: #99f;
+   font-size: 300%;
+   padding: 5px 8px;
+   margin-bottom: 3px;
+   font-weight: bold;
+}
+.mifecha .mes{
+   background-color: #339;
+   font-size: 80%;
+   padding: 2px;
+   color: #fff;
+   font-weight: bold;
+}
+
+
+.carrusel{
+height:380px;
+overflow:hidden;
+width:170px;
+margin-left:87%;
+margin-top: 1%;
+border:1px #fff solid;
+}
+ 
+.bloque-imagenes{
+margin:0 0 0 12px;
+padding:0;
+}
+ 
+.bloque-imagenes li{
+list-style:none;
+margin:0;
+padding:0;
+margin-bottom:12px;
+margin-left:8px;
+}
+ 
+.bloque-imagenes li img{
+height:80px;
+width:130px;
+border:0;
+}
+ 
+.bloque-imagenes a:hover img{
+border:1px #fff solid;
+}
+.titulolateral{
+border:1px #fff solid;
+margin-left:87%;
+width:170px;
+height:33px;
+margin-top:-15%;
+padding: 8px 8px 5px;
+}
+.titulolateralizq{
+border:1px #fff solid;
+margin-left:1%;
+width:170px;
+height:33px;
+margin-top:8%;
+padding: 8px 8px 5px;
+}
+#piedepagina{
+width:800px;
+position: relative;
+bottom: 0 !important;
+margin-bottom: -50%;
+font-family: arial black, Time new roman,vani,arial black, tahoma;
+color: white;
+font-size:13px;
+margin-left:20%;
+text-align:right;
+overflow:auto;
+}
+  
+#piedepagina1{
+width:800px;
+margin-top: 10%;
+font-family: arial black, Time new roman,vani,arial black, tahoma;
+color: white;
+font-size:13px;
+margin-left:20%;
+text-align:right;
+}
+
+#videobox {
+width:700px;
+height:500px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;>
+border-radius: 10px;
+background:#CCCCCC;  /* Fondo VideoBox */
+border:1px solid #5A5A5A;
+padding:10px; -moz-box-shadow: 0px 0px 30px #E3E3E3;
+-webkit-box-shadow: 0px 0px 30px #E3E3E3;
+box-shadow: 0px 0px 30px #E3E3E3;
+margin-left:15%;
+}
+.mini {
+background: #ffffff;  /* Fondo miniatura */
+-webkit-border-radius:3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding:5px;
+height:90px;
+width:100px;
+margin-bottom:10%;
+}
+.mini:hover {
+
+height:100px;
+}
+.foto{
+width:500px;
+margin-left:15%;
+margin-top:-1%;
+}
+.logosocial{
+width:7%;
+margin-bottom:5%;
+padding:10px;
+margin-left:42%;
+
+}
+.logosocial1{
+width:7%;
+margin-bottom:3%;
+padding:10px;
+margin-left:42%;
+
+}
+
+.texto{
+margin-left:52%;
+margin-top:-38%;
+padding:50px;
+}
+.texto1{
+margin-left:52%;
+margin-top:-30%;
+padding:50px;
+}
+
+.caja{
+margin-bottom:-6%;
+margin-LEFT:20%;
+}
+.titulosocial{
+margin-top:3%;
+margin-LEFT:50%;
+}
+img.start1 {
+ margin-top:8%;
+margin-left:48%;
+ width:8%;
+ }
+img.start2 {
+ margin-top:8%;
+margin-left:37%;
+ width:8%;
+
+ }
+img.start3 {
+ margin-top:8%;
+margin-left:15%;
+ width:8%;
+
+ }
+.red{
+margin-top:-14%;
+margin-left:44%;
+padding:50px;
+}
+.red1{
+margin-top:-12%;
+margin-left:44%;
+padding:50px;
+}

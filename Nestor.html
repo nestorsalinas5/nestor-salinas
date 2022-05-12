@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<script>
+		function reloj() {
+			//Variables
+			horareal = new Date()
+			hora = horareal.getHours()
+			minuto = horareal.getMinutes()
+			segundo = horareal.getSeconds()
+			//Codigo para evitar que solo se vea un numero en los segundos
+			comprobarsegundo = new String (segundo)
+			if (comprobarsegundo.length == 1)
+			segundo = "0" + segundo
+			//Codigo para evitar que solo se vea un numero en los minutos
+			comprobarminuto = new String (minuto)
+			if (comprobarminuto.length == 1)
+			minuto = "0" + minuto
+			//Codigo para evitar que solo se vea un numero en las horas
+			comprobarhora = new String (hora)
+			if (comprobarhora.length == 1)
+			hora = "0" + hora
+			// Codigo para mostrar el reloj en pantalla
+			verhora = hora + " : " + minuto + " : " + segundo
+			document.reloj_javascript.reloj.value = verhora
+			setTimeout("reloj()",1000)
+		}
+	</script>
+<script src="modernizr-custom.js"></script>
+<script src="carrousel3d.js"></script>
+</head>
+<body onload="reloj()">
+	<form name="reloj_javascript">
+		<input type="text" name="reloj" onfocus="window.document.reloj_javascript.reloj.blur()">
+	</form>
+</body>
+
+    	
+    <img class="clase1"src="img/log.jpg">
+    <title>Desarrolladores</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <script src="reloj.js"></script>
+    <script src="carrousel vertical/carrousel.js"></script>
+    <script src="carrousel vertical/funciones.js"></script>
+    
+<script>
+var f=new Date();
+var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+document.write('<div class="mifecha">');
+document.write('<div class="ano">' + f.getFullYear() + '</div>');
+document.write('<div class="dia">' + f.getDate() + '</div>');
+document.write('<div class="mes">' + meses[f.getMonth()] + '</div>');
+document.write('</div>');
+</script>
+
+
+</head>	
+<body>
+        <ul class="menu cf">
+  <li><a href="index.html">INICIO</a></li>
+
+
+
+ <li>
+    <a href=""> LA TECNOLOGIA</a>
+    <ul class="submenu">
+      <li><a href="TECNOLOGIA.HTML">¿Qu&eacute; es?</a></li>
+      <li><a href="VENTAJAS.HTML"> Ventajas</a></li>
+      <li><a href="DESVENTAJAS.HTML"> Desventajas </a></li>
+    </ul>			
+  </li>
+
+  <li>
+    <a href="">SISTEMA NERVIOSO</a>
+    <ul class="submenu">
+      <li><a href="TUNEL.HTML"> T&uacute;nel carpiano</a></li>
+      <li><a href="TENDINITIS.HTML"> Tendinitis</a></li>
+      <li><a href="TORTICOLIS.HTML"> Torticolis</a></li>
+   
+  </ul>			
+  </li>
+
+
+
+
+ <li>
+    <a href="">PROBLEMAS</a>
+    <ul class="submenu">
+      <li><a href="MENTALES.HTML"> Mentales</a></li>
+      <li><a href="auditiva.html"> Auditivos</a></li>
+      <li><a href="visuales.html"> Visuales</a></li>
+    </ul>			
+  </li>
+
+
+  <li><a href="">GALERIA</a>
+    <ul class="submenu">
+      <li><a href="GALERIA.HTML">FOTOS</a></li>
+      <li><a href="video.html">VIDEOS</a></li>
+    </ul>			
+  </li>
+  <li><a href="">DESARROLLADORES</a>
+      <ul class="submenu">
+      <li><a href="clara.html">Clara Pereira</a></li>
+      <li><a href="">Nestor Salinas</a></li>
+      <li><a href="librada.html">Librada Vera</a></li>
+    </ul>
+   </li>
+  </UL>
+<h1 class="titulosocial">DATOS</h1>
+<img class="foto" src="img/nestor.png">
+<p class="texto1">
+Nombre: Nestor Santiago<br>
+Apellido:Salinas Areco<br>
+Colegio: Centro Educativo la Amistad<br>
+Curso:3º<br>
+Enfasis: B.T.I<br>
+Ciudad: Mariano Roque Alonso<br>
+Fecha de Nacimiento: 20 de Septiembre del 2000<br>
+Edad: 18 años<br>
+</p>
+<div class="caja">
+	<a href="https://www.facebook.com/nestor.salinas.182?fb_dtsg_ag=Adx_4Ed29GHXuzzJZw7gmMtCJrvS_cRBIHR10uwcGbH74Q%3AAdwwqXlA_o5PBGHbOyvVvQVCO39Dsg1x2wumzvkL458tcQ"><img class="logosocial1" src="IMG/facebook.png"><p class="red1"><p class="red">Nestor Salinas</p></a>
+	<a href="https://www.instagram.com/nestorsalinas5/"><img class="logosocial1" src="IMG/instagram.png"><p class="red1">@nestorsalinas5</p></a>
+	<a href="https://twitter.com/santiii_2015?s=09"><img class="logosocial1" src="IMG/twitter.png"><p class="red1">@santiii_2015</p></a>
+	
+</div>
+
+<div id="piedepagina1">
+Copyright &copy; 2018 - 3° B.T.I colegio La Amistad
+</div>		
+

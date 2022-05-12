@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<script>
+		function reloj() {
+			//Variables
+			horareal = new Date()
+			hora = horareal.getHours()
+			minuto = horareal.getMinutes()
+			segundo = horareal.getSeconds()
+			//Codigo para evitar que solo se vea un numero en los segundos
+			comprobarsegundo = new String (segundo)
+			if (comprobarsegundo.length == 1)
+			segundo = "0" + segundo
+			//Codigo para evitar que solo se vea un numero en los minutos
+			comprobarminuto = new String (minuto)
+			if (comprobarminuto.length == 1)
+			minuto = "0" + minuto
+			//Codigo para evitar que solo se vea un numero en las horas
+			comprobarhora = new String (hora)
+			if (comprobarhora.length == 1)
+			hora = "0" + hora
+			// Codigo para mostrar el reloj en pantalla
+			verhora = hora + " : " + minuto + " : " + segundo
+			document.reloj_javascript.reloj.value = verhora
+			setTimeout("reloj()",1000)
+		}
+	</script>
+</head>
+<body onload="reloj()">
+	<form name="reloj_javascript">
+		<input type="text" name="reloj" onfocus="window.document.reloj_javascript.reloj.blur()">
+	</form>
+</body>
+
+
+    <img class="clase1"src="img/log.jpg">
+    <title>Menu 3d</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="reloj.js"></script>
+
+
+</head>	
+
+<body>
+		<div class="social">
+		<ul>
+			<li><a href="" target="_blank" class="icon-facebook"></a>
+			<li><a href="" target="_blank" class="icon-twitter"></a></li>
+			<li><a href="" target="_blank" class="icon-instagram"></a></li>
+			<li><a href="" class="icon-mail"></a></li>
+		</ul>
+	</div>
+        <ul class="menu cf">
+  <li><a href="index.html">INICIO</a></li>
+
+
+
+ <li>
+    <a href=""> LA TECNOLOGIA</a>
+    <ul class="submenu">
+      <li><a href="">Qué es?</a></li>
+      <li><a href=""> Utilidad</a></li>
+      <li><a href=""> Ventajas</a></li>
+      <li><a href=""> Desventajas </a></li>
+    </ul>			
+  </li>
+
+  <li>
+    <a href="">SISTEMA NERVIOSO</a>
+    <ul class="submenu">
+      <li><a href=""> Tunel carpiano</a></li>
+      <li><a href=""> Tendinitis</a></li>
+      <li><a href=""> Torticolis</a></li>
+   
+  </ul>			
+  </li>
+
+
+
+
+ <li>
+    <a href="">PROBLEMAS</a>
+    <ul class="submenu">
+      <li><a href=""> Mentales</a></li>
+      <li><a href=""> Auditivos</a></li>
+      <li><a href=""> Visuales</a></li>
+    </ul>			
+  </li>
+
+
+  <li><a href="">GALERIA</a>
+    <ul class="submenu">
+      <li><a href="GALERIA.HTML">FOTOS</a></li>
+      <li><a href="">VIDEOS</a></li>
+    </ul>			
+  </li>
+  <li><a href="">DESARROLLADORES</a>
+      <ul class="submenu">
+      <li><a href="">LIBRADA VERA</a></li>
+      <li><a href="">CLARA PEREIRA</a></li>
+      <li><a href="">NESTOR SALINAS</a></li>
+    </ul>
+   </li>
+  </UL>	
+
+
+<div class="content-box-blue">
+<h1>BIENVENIDOS:</h1> 
+<p> Le damos la mas cordial bienve
